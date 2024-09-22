@@ -1,0 +1,223 @@
+:root {
+  --rose-pink: #e76cc0ff;
+  --fairy-tale: #e9c2d8ff;
+  --vanilla: #f9f5acff;
+  --steel-pink: #cb23bcff;
+  --palatinate: #4f1c4bff;
+  --mauveine: #9532a6ff;
+  --russian-violet: #110d36ff;
+  --atomic-tangerine: #fa9367ff;
+  --resolution-blue: #373382ff;
+  --purpureus: #9236a4ff;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  cursor: url("./assets/cursor.png") 10 10, auto;
+}
+
+main {
+  height: 100vh;
+  background-color: antiquewhite;
+  background-image: url("./assets/moon-palm-trees-synthwave-4k-wallpaper-uhdpaper.com-215@0@k.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: grid;
+  place-items: center;
+}
+
+#main {
+  padding: 30px 60px;
+  text-align: center;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  height: 420px;
+  width: 600px;
+  background: #68686800;
+
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  box-shadow: 5px 5px 10px 2px rgba(0, 0, 0, 0.203),
+    -5px -5px 10px 2px rgba(255, 255, 255, 0.245),
+    inset 5px 5px 10px 2px rgba(0, 0, 0, 0.233),
+    inset -5px -5px 10px 2px rgba(255, 255, 255, 0.216);
+
+  animation: xaxis 0.5s ease-out 0s 1 forwards;
+}
+#lgnwep {
+  padding: 0 0 20px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  border-bottom: 1px solid white;
+}
+#mail,
+#psd,
+#logn {
+  color: rgb(255, 255, 255);
+  text-align: left;
+  /* border: 1px solid white; */
+  background-color: rgba(240, 248, 255, 0.05);
+  height: 40px;
+  padding: 0 20px;
+  border-radius: 20px;
+  box-shadow: 5px 5px 10px 2px rgba(0, 0, 0, 0.25),
+    -5px -5px 10px 2px rgba(255, 255, 255, 0.25),
+    inset 5px 5px 10px 2px rgba(0, 0, 0, 0.25),
+    inset -5px -5px 10px 2px rgba(255, 255, 255, 0.25);
+  animation: slidein 1s ease-out 0s 1;
+  outline: none;
+}
+
+input::placeholder {
+  color: white;
+}
+input{
+  border: 1px solid white;
+}
+input:invalid:not(:placeholder-shown) {
+  border: 1px solid red;
+}
+input:valid:not(:placeholder-shown){
+  border: 1px solid rgb(0, 255, 0);
+}
+input:invalid + p:not(:placeholder-shown) {
+  color: red;
+  display: contents;
+}
+input:valid + #warning:not(:placeholder-shown) {
+  color: red;
+  display: none;
+}
+#xyz {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#rem {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+#logn {
+  color: black;
+  text-align: center;
+  border: 1px solid rgb(255, 255, 255);
+  outline: transparent;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 5px 5px 10px 2px rgba(0, 0, 0, 0.203),
+    -5px -5px 10px 2px rgba(255, 255, 255, 0.245);
+}
+
+#lgnwgfg {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 5px 0;
+  animation: xaxis 0.5s ease-out 0s 1;
+}
+#warning {
+  font-size: 0.8rem;
+  text-align: left;
+  padding: 0 20px;
+  color: rgb(255, 171, 171);
+  text-shadow: 0 0 2px rgb(0, 0, 0);
+}
+#lgl {
+  height: 40px;
+  border-radius: 20px;
+  background-color: rgba(255, 255, 255, 0);
+  box-shadow: 5px 5px 10px 2px rgba(0, 0, 0, 0.203),
+    -5px -5px 10px 2px rgba(255, 255, 255, 0.245);
+}
+
+h2 {
+  font-size: 2em;
+  animation: fadein 1s ease-in-out 0s 1, rainbow 5s linear 0s infinite;
+}
+
+@media (max-width: 620px) {
+  * {
+    box-sizing: border-box;
+  }
+  main {
+    height: 100vh;
+  }
+
+  #main {
+    width: 80%;
+  }
+
+  #xyz {
+    font-size: 0.5rem;
+  }
+}
+
+@keyframes slidein {
+  0% {
+    opacity: 0;
+    transform: scale(1.05);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes xaxis {
+  0% {
+    transform: translateX(-10%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadein {
+  0% {
+    transform: scale(0.9);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes rainbow {
+  90% {
+    color: var(--rose-pink);
+  }
+  10% {
+    color: var(--fairy-tale);
+  }
+  20% {
+    color: var(--vanilla);
+  }
+  30% {
+    color: var(--steel-pink);
+  }
+  40% {
+    color: var(--palatinate);
+  }
+  50% {
+    color: var(--mauveine);
+  }
+  60% {
+    color: var(--russian-violet);
+  }
+  70% {
+    color: var(--atomic-tangerine);
+  }
+  80% {
+    color: var(--resolution-blue);
+  }
+  100% {
+    color: var(--purpureus);
+  }
+}

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./assets/cursor.png" type="image/png">
+    <title>Login Form</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main id="main1">
+      <section id="main">
+        <form action="logn.html">
+        <section id="lgnwep">
+            <h2>Login</h2>
+            <input type="email" placeholder="Email" id="mail" required />
+            <input
+              type="password"
+              name=""
+              placeholder="password"
+              id="psd"
+              minlength="8"
+              required
+            />
+            <p id="warning">Password must be 6 character long</p>
+            <div id="xyz">
+              <div id="rem">
+                <input type="checkbox" id="reme" />
+                <p>Remember me</p>
+              </div>
+              <p>Forgot Password?</p>
+            </div>
+            <button type="submit" id="logn">Login</button>
+          </section>
+        </form>
+        <section id="lgnwgfg">
+          <img src="./assets/google.png" alt="" id="lgl" />
+          <img src="./assets/facebook.png" alt="" id="lgl" />
+          <img src="./assets/github.png" alt="" id="lgl" />
+        </section>
+      </section>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
